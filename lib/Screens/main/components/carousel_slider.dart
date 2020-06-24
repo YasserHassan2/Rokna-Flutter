@@ -66,7 +66,7 @@ class CarouselDemoState extends State<CarouselDemo> {
                       margin: EdgeInsets.symmetric(horizontal: 4.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
-                        color: Colors.green,
+                        color: Colors.transparent,
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),

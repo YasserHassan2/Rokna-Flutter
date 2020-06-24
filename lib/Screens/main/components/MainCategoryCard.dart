@@ -21,25 +21,22 @@ class MainCategoryCard extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(
-        color: Colors.blueAccent,
         borderRadius: BorderRadius.circular(12)
         ),
-        margin: EdgeInsets.symmetric(
-          vertical: 4,
-          horizontal: 4
-        ),
-    height: 160,
+        margin: EdgeInsets.all(8),
+    height: 100,
     width: double.infinity,
     child: InkWell(
       borderRadius: BorderRadius.circular(22),
-      onTap: (){},
+      onTap: press,
       child: Stack(
         children: <Widget>[
-          ColorFiltered(
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(22)
-              ),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(22)
+            ),
+            child: ColorFiltered(
+              colorFilter: ColorFilter.mode(Colors.black87.withOpacity(0.5), BlendMode.dstATop),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(22),
                 child: Image(
@@ -49,14 +46,12 @@ class MainCategoryCard extends StatelessWidget {
                 ),
               ),
             ),
-            colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.hardLight),
           ),Center(
             child: Text(category.title,style:TextStyle(
-              color: Colors.white,
-              fontSize: 40
+              color: Colors.black,
+              fontSize: 25
             ),),
           )
-
         ],
       ),
     ));

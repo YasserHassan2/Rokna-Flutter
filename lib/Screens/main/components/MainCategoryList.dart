@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ro/Screens/lists/listsScreen.dart';
 import 'package:flutter_ro/model/MainCategory.dart';
 
 import 'MainCategoryCard.dart';
@@ -17,7 +18,7 @@ class MainCategoryList extends StatelessWidget {
             itemIndex: index,
             category: mainCategorisList[index],
             press: (){
-              print(mainCategorisList[index].title);
+              Navigator.push(context,  MaterialPageRoute(builder: (context) => ListsScreen()));
             },
           ),
         ),
