@@ -35,20 +35,17 @@ class MainCategoryCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(22)
             ),
-            child: ColorFiltered(
-              colorFilter: ColorFilter.mode(Colors.black87.withOpacity(0.5), BlendMode.dstATop),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(22),
-                child: Image(
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                  image: NetworkImage(category.imgUrl),
-                ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(22),
+              child: Image(
+                width: double.infinity,
+                fit: BoxFit.cover,
+                image: NetworkImage(category.imgUrl),
               ),
             ),
           ),Center(
             child: Text(category.title,style:TextStyle(
-              color: Colors.black,
+              color: Colors.black87,
               fontSize: 25
             ),),
           )

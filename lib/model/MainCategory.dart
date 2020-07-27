@@ -21,7 +21,7 @@ List<MainCategory> mainCategorisList = [
   MainCategory(
       id: 3,
       title: 'Events',
-      imgUrl: 'https://images.pexels.com/photos/3626588/pexels-photo-3626588.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"'
+      imgUrl: 'https://images.pexels.com/photos/2766334/pexels-photo-2766334.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
   )
 
 

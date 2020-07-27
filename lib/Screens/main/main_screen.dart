@@ -14,10 +14,13 @@ class MainScreen extends StatelessWidget {
         keyApplicationId,
         keyParseServerUrl,clientKey: keyClientKey);
 
-    var dietPlan = ParseObject('DietPlan')
-      ..set('Name', 'Ketogenic')
-      ..set('Fat', 65);
-    await dietPlan.save();
+    var apiResponse = await ParseObject('category').getAll();
+
+    if (apiResponse.success){
+      for (var testObject in apiResponse.result) {
+        print('Rokna App' + ": " + testObject.toString());
+      }
+    }
 
     print('done');
   }
